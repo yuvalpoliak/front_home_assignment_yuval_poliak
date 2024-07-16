@@ -1,0 +1,12 @@
+.containerNavbar {
+  width: 100vw;
+  height: 10vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  color: black;
+}

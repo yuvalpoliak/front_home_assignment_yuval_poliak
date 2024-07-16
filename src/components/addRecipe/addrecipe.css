@@ -1,0 +1,71 @@
+.containerAtAdd {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.containerSend {
+  align-self: center;
+  width: 30%;
+  height: 15%;
+}
+.btn {
+  height: 100%;
+  width: 100%;
+  background-color: lightblue;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.addTitle {
+  width: 100%;
+  height: 30%;
+  margin-left: 2rem;
+}
+
+.titleInput {
+  width: 50%;
+  height: 25%;
+  background-color: white;
+  color: black;
+  font-size: 3em;
+}
+
+.addContent {
+  width: 100%;
+  height: 40%;
+  margin-left: 2rem;
+}
+
+.contentInput {
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  color: black;
+  font-size: 1.5em;
+}
+
+label {
+  color: black;
+}
+
+.checkboxContainer {
+  width: 12.5rem;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 4rem;
+}
+
+.checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: lightblue;
+}
