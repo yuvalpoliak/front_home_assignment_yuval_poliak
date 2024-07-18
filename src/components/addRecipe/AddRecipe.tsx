@@ -40,6 +40,9 @@ export default function AddRecipe() {
 
   return (
     <form className="containerAtAdd" onSubmit={uploadRecipe}>
+      <div className="closeAdd" onClick={() => setAtAdd(false)}>
+        X
+      </div>
       <div className="addTitle">
         <h1>Title</h1>
         <input
@@ -50,7 +53,7 @@ export default function AddRecipe() {
         />
       </div>
       <div className="addContent">
-        <h1>Content</h1>
+        <h1>Ingredients</h1>
         <textarea
           name="content"
           className="contentInput"

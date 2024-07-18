@@ -1,11 +1,12 @@
-//local
-export const ENDPOINT = "http://127.0.0.1:8000/api/v1";
-
 import { recipe } from "../types";
 import getCookie from "./getCookie";
 
+//local
+//export const ENDPOINT = "http://127.0.0.1:8000/api/v1/";
+
 //prod
-//export const ENDPOINT ="http://ec2-18-153-81-4.eu-central-1.compute.amazonaws.com:8000/api/v1/";
+export const ENDPOINT =
+  "http://ec2-18-153-81-4.eu-central-1.compute.amazonaws.com:8000/api/v1/";
 
 interface serverObj {
   pk: number;
@@ -15,7 +16,7 @@ interface serverObj {
 
 export const getAllRecipe = async () => {
   try {
-    const res = await fetch(`${ENDPOINT}/get-all`);
+    const res = await fetch(`${ENDPOINT}get-all`);
     if (!res.ok) {
       alert("could not load recipe. please try again later");
       throw new Error("network error");
@@ -32,7 +33,7 @@ export const getAllRecipe = async () => {
 
 export const postRecipe = async (recipe: recipe) => {
   const cookie = getCookie();
-  const res = await fetch(`${ENDPOINT}/upload-recipe/`, {
+  const res = await fetch(`${ENDPOINT}upload-recipe/`, {
     method: "POST",
     body: JSON.stringify(recipe),
     headers: { "X-CSRFToken": cookie },
